@@ -6,6 +6,7 @@
 
 body {
     font-family: "Poppins" sans-serif;
+    overflow: hidden;
 }
 
 .wave {
@@ -31,18 +32,42 @@ body {
     align-items: center;
 }
 
-.img img {
-    width: 500px;
-}
-
 .login-container {
     display: flex;
     align-items: center;
     text-align: center;
 }
 
+.img img {
+    width: 500px;
+}
+
 form {
     width: 360px;
+}
+
+.login-content img {
+    height: 100px;
+}
+
+.login-content h2 {
+    margin: 15px 0;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 2.9rem;
+}
+
+.login-content .input-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one {
+    margin-top: 0;
 }
 
 .avatar {
@@ -73,13 +98,14 @@ form h2 {
 }
 
 .i {
+    color: #d9d9d9;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .i i {
-    color: #d9d9d9;
+    transition: 0.3s;
 }
 
 .input-div > div {
@@ -218,10 +244,6 @@ a:hover {
     }
 
     .login-content {
-        justify-content: center;
-    }
-
-    .login-container {
         display: flex;
         justify-content: center;
         align-items: center;
